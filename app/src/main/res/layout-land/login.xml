@@ -14,14 +14,17 @@
             android:id="@+id/imageView3"
             android:layout_width="361dp"
             android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/b" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="10dp"
-            android:layout_marginLeft="50dp"
+            android:layout_gravity="center_horizontal"
             android:layout_weight="1"
+            android:gravity="bottom"
             android:orientation="horizontal">
 
             <TextView
@@ -29,24 +32,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Username" />
+                android:text="Username"
+                android:textColor="@android:color/background_dark" />
 
             <EditText
                 android:id="@+id/editText3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="?attr/colorControlNormal"
+                android:background="@android:drawable/editbox_background_normal"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:hint="username"
+                android:inputType="textPersonName" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="10dp"
-            android:layout_marginLeft="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
             android:layout_weight="1"
             android:orientation="horizontal">
 
@@ -55,14 +59,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Password" />
+                android:text="Password"
+                android:textColor="@android:color/background_dark" />
 
             <EditText
                 android:id="@+id/editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@android:drawable/editbox_background_normal"
                 android:ems="10"
+                android:hint="password"
                 android:inputType="textPassword" />
 
         </LinearLayout>
